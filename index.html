@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNIOESTE - Foz do Iguaçu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="main-header">
         <div class="container header-content">
             <div class="logo">
-                <img src="placeholder_logo.png" alt="Logo Unioeste">
+                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Unidades</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="unidades.html">Unidades</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="vestibular.html" class="cta-button">Inscreva-se</a>
+                    </li>
                 </ul>
             </nav>
-            <button class="cta-button">Inscreva-se</button>
         </div>
     </header>
 
@@ -29,30 +34,38 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>UNIOESTE - FOZ DO IGUAÇU</h1>
-                <p>Ensino de qualidade, com foco no futuro e nas oportunidades que o mercado oferece.</p>
-                <button>Saiba Mais</button>
+                <p>Excelência acadêmica transformando vidas e construindo o futuro da região.</p>
+                <a href="sobre.html" class="btn-primary">Saiba Mais</a>
             </div>
             <div class="hero-image">
-                <img src="placeholder_unioeste_fachada.png" alt="Fachada da Unioeste Foz do Iguaçu">
+                <img src="assets/fachada-unioeste.jpg" alt="Fachada da Unioeste Foz do Iguaçu">
             </div>
         </div>
     </section>
 
     <section class="why-unioeste">
         <div class="container">
-            <h2>Por que a Unioeste é a sua Melhor Escolha?</h2>
+            <h2>Por que escolher a UNIOESTE?</h2>
             <div class="reasons-grid">
                 <div class="reason-item">
-                    <h3>Qualidade de Ensino Reconhecida</h3>
-                    <p>Descrição breve sobre a qualidade de ensino e reconhecimento no mercado de trabalho.</p>
+                    <div class="reason-icon">🎓</div>
+                    <h3>Excelência Acadêmica</h3>
+                    <p>Nota máxima no MEC em diversos cursos, com corpo docente altamente qualificado.</p>
                 </div>
                 <div class="reason-item">
-                    <h3>Infraestrutura Moderna e Completa</h3>
-                    <p>Descrição breve sobre a infraestrutura da universidade, laboratórios e recursos.</p>
+                    <div class="reason-icon">🏛️</div>
+                    <h3>Infraestrutura Completa</h3>
+                    <p>Laboratórios modernos, bibliotecas atualizadas e espaços de convivência.</p>
                 </div>
                 <div class="reason-item">
-                    <h3>Inovação e Inserção Profissional</h3>
-                    <p>Descrição breve sobre como a Unioeste promove a inovação e a inserção no mercado de trabalho.</p>
+                    <div class="reason-icon">🌎</div>
+                    <h3>Internacionalização</h3>
+                    <p>Convênios com universidades estrangeiras e programas de intercâmbio.</p>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-icon">💼</div>
+                    <h3>Inserção no Mercado</h3>
+                    <p>Alto índice de empregabilidade com parcerias em diversas áreas.</p>
                 </div>
             </div>
         </div>
@@ -61,18 +74,21 @@
     <section class="courses-section">
         <div class="container courses-content">
             <div class="courses-text">
-                <h2>Cursos de Graduação e Pós-Graduação</h2>
-                <p>Aqui você encontra uma vasta gama de cursos de graduação e pós-graduação, desenvolvidos para atender às demandas do mercado e preparar você para o sucesso profissional.</p>
-                <ul>
-                    <li>Grade curricular completa</li>
-                    <li>Professores qualificados</li>
-                    <li>Projetos de pesquisa e extensão</li>
+                <h2>Nossos Cursos</h2>
+                <p>Oferecemos uma ampla variedade de cursos de graduação, pós-graduação e extensão, todos com qualidade reconhecida pelo MEC.</p>
+                <ul class="features-list">
+                    <li>Grade curricular atualizada</li>
+                    <li>Professores mestres e doutores</li>
+                    <li>Programas de pesquisa e extensão</li>
                     <li>Opções de turno flexíveis</li>
                 </ul>
-                <button>Confira Nossos Cursos</button>
+                <div class="buttons-group">
+                    <a href="graduacao.html" class="btn-primary">Graduação</a>
+                    <a href="pos-graduacao.html" class="btn-secondary">Pós-Graduação</a>
+                </div>
             </div>
             <div class="courses-image">
-                <img src="placeholder_students_classroom.png" alt="Alunos em sala de aula">
+                <img src="assets/alunos-em-sala.jpeg" alt="Alunos em sala de aula">
             </div>
         </div>
     </section>
@@ -80,52 +96,73 @@
     <section class="academic-life-section">
         <div class="container academic-life-content">
             <div class="academic-life-image">
-                <img src="placeholder_campus_life.png" alt="Vida Acadêmica no Campus">
+                <img src="assets/campus-vida.jpg" alt="Vida Acadêmica no Campus">
             </div>
             <div class="academic-life-text">
-                <h2>Vida Acadêmica e Oportunidades</h2>
-                <p>Na Unioeste, a sua jornada vai além da sala de aula. Oferecemos diversas oportunidades para o seu desenvolvimento pessoal e profissional.</p>
-                <ul>
-                    <li>Programas de intercâmbio</li>
-                    <li>Iniciação científica</li>
-                    <li>Eventos e workshops</li>
-                    <li>Monitorias e bolsas de estudo</li>
-                    <li>Convênios com empresas</li>
+                <h2>Vida no Campus</h2>
+                <p>Na UNIOESTE, sua experiência vai muito além da sala de aula. Oferecemos um ambiente rico em oportunidades.</p>
+                <ul class="features-list">
+                    <li>Mais de 30 grupos de estudo e pesquisa</li>
+                    <li>Programas de iniciação científica</li>
+                    <li>Eventos acadêmicos anuais</li>
+                    <li>Atividades esportivas e culturais</li>
+                    <li>Restaurante universitário</li>
                 </ul>
-                <button>Saiba Mais sobre a Vida no Campus</button>
+                <a href="#" class="btn-primary">Conheça o Campus</a>
             </div>
         </div>
     </section>
 
-    <section class="future-section">
+    <section class="cta-section">
         <div class="container">
-            <h2>Seu Futuro de Sucesso Começa na Unioeste!</h2>
-            <p>Conheça mais sobre nossos cursos, oportunidades e como podemos te ajudar a construir uma carreira de sucesso. Estamos prontos para te receber!</p>
-            <button>Fale Conosco e Saiba Mais</button>
+            <h2>Pronto para transformar seu futuro?</h2>
+            <p>Inscreva-se no vestibular e dê o primeiro passo para uma carreira de sucesso.</p>
+            <div class="buttons-group">
+                <a href="vestibular.html" class="btn-primary">Inscreva-se</a>
+                <a href="cursos.html" class="btn-secondary">Conheça os Cursos</a>
+            </div>
         </div>
     </section>
 
     <section class="faq-section">
         <div class="container">
-            <h2>Perguntas Frequentes (FAQs)</h2>
-            <p>Aqui você encontra respostas para as perguntas mais comuns sobre a Unioeste, cursos, vestibular e vida acadêmica. Se sua dúvida não estiver aqui, entre em contato!</p>
+            <h2>Perguntas Frequentes</h2>
             <div class="faq-items">
-                <details>
-                    <summary>Pergunta relevante um?</summary>
-                    <p>Resposta da pergunta um.</p>
-                </details>
-                <details>
-                    <summary>Pergunta relevante dois?</summary>
-                    <p>Resposta da pergunta dois.</p>
-                </details>
-                <details>
-                    <summary>Pergunta relevante três?</summary>
-                    <p>Resposta da pergunta três.</p>
-                </details>
-                <details>
-                    <summary>Pergunta relevante quatro?</summary>
-                    <p>Resposta da pergunta quatro.</p>
-                </details>
+                <div class="faq-item">
+                    <button class="faq-question">Como faço para me inscrever no vestibular?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>As inscrições são realizadas exclusivamente pelo nosso site durante o período de inscrições. Você precisará preencher o formulário online, pagar a taxa de inscrição e escolher o curso desejado.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Quais documentos são necessários para matrícula?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você precisará de: RG, CPF, histórico escolar do ensino médio, certificado de conclusão, comprovante de residência e 2 fotos 3x4. Estrangeiros precisam apresentar documentos regularizados.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">A UNIOESTE oferece bolsas de estudo?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, oferecemos diversos tipos de bolsas: assistência estudantil, iniciação científica, monitoria, além de participar dos programas governamentais como Prouni e FIES.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">Existe alojamento estudantil?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, temos alojamento estudantil com vagas limitadas. A seleção é feita por edital com base em critérios socioeconômicos. Consulte o edital específico para mais informações.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -133,59 +170,67 @@
     <footer class="main-footer">
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="placeholder_logo.png" alt="Logo Unioeste">
+                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
+                <p>Universidade Estadual do Oeste do Paraná</p>
+                <p>Campus Foz do Iguaçu</p>
             </div>
             <div class="footer-links">
                 <div class="column">
-                    <h4>Unioeste</h4>
+                    <h4>Institucional</h4>
                     <ul>
-                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
                         <li><a href="#">História</a></li>
                         <li><a href="#">Missão e Valores</a></li>
+                        <li><a href="#">Estrutura Administrativa</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Cursos</h4>
                     <ul>
-                        <li><a href="#">Graduação</a></li>
-                        <li><a href="#">Pós-Graduação</a></li>
-                        <li><a href="#">Extensão</a></li>
+                        <li><a href="graduacao.html">Graduação</a></li>
+                        <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
+                        <li><a href="extensao.html">Extensão</a></li>
+                        <li><a href="#">Cursos Técnicos</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="biblioteca.html">Biblioteca</a></li>
+                        <li><a href="editais.html">Editais</a></li>
+                        <li><a href="vestibular.html">Vestibular</a></li>
+                        <li><a href="#">Restaurante Universitário</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Contato</h4>
                     <ul>
-                        <li><a href="#">Endereço</a></li>
-                        <li><a href="#">Telefone</a></li>
-                        <li><a href="#">E-mail</a></li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h4>Links Úteis</h4>
-                    <ul>
-                        <li><a href="#">Vestibular</a></li>
-                        <li><a href="#">Editais</a></li>
-                        <li><a href="#">Biblioteca</a></li>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                        <li><a href="#">Ouvidoria</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Imprensa</a></li>
                     </ul>
                 </div>
             </div>
             <div class="newsletter-signup">
                 <h4>Receba Novidades</h4>
                 <form>
-                    <input type="email" placeholder="Seu e-mail">
-                    <button type="submit">Inscrever</button>
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Assinar</button>
                 </form>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/icone-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/icone-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/icone-twitter.png" alt="Twitter"></a>
+                </div>
             </div>
         </div>
         <div class="container copyright">
-            <p>&copy; 2025 UNIOESTE. Todos os direitos reservados.</p>
-            <div class="social-icons">
-                <a href="#"><img src="placeholder_facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="placeholder_instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="placeholder_twitter.png" alt="Twitter"></a>
-            </div>
+            <p>&copy; 2023 UNIOESTE - Todos os direitos reservados</p>
+            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
