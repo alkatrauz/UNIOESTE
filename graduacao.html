@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Graduação - UNIOESTE Foz do Iguaçu</title>
+    <link rel="stylesheet" href="css/graduacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <!-- Cabeçalho igual ao index.html -->
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Cursos de Graduação</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <a href="cursos.html">Cursos</a> > <span>Graduação</span>
+            </nav>
+        </section>
+
+        <section class="courses-filter">
+            <h2>Nossos Cursos</h2>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="area">Área:</label>
+                    <select id="area">
+                        <option value="all">Todas as Áreas</option>
+                        <option value="exatas">Ciências Exatas</option>
+                        <option value="humanas">Ciências Humanas</option>
+                        <option value="saude">Ciências da Saúde</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="shift">Turno:</label>
+                    <select id="shift">
+                        <option value="all">Todos os Turnos</option>
+                        <option value="morning">Matutino</option>
+                        <option value="afternoon">Vespertino</option>
+                        <option value="night">Noturno</option>
+                        <option value="integral">Integral</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="degree">Titulação:</label>
+                    <select id="degree">
+                        <option value="all">Todas</option>
+                        <option value="bacharelado">Bacharelado</option>
+                        <option value="licenciatura">Licenciatura</option>
+                        <option value="tecnologico">Tecnológico</option>
+                    </select>
+                </div>
+                <button class="btn-secondary">Filtrar</button>
+            </div>
+        </section>
+
+        <section class="courses-list">
+            <div class="course-detail" id="administracao">
+                <div class="course-header">
+                    <h3>Administração</h3>
+                    <span class="course-badge bacharelado">Bacharelado</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-info">
+                        <p><strong>Duração:</strong> 4 anos</p>
+                        <p><strong>Turno:</strong> Matutino/Noturno</p>
+                        <p><strong>Vagas:</strong> 60 por semestre</p>
+                        <p><strong>Nota MEC:</strong> 4.5</p>
+                    </div>
+                    <div class="course-description">
+                        <p>O curso de Administração da UNIOESTE forma profissionais capazes de gerenciar organizações públicas e privadas, com visão estratégica e capacidade de liderança.</p>
+                        <h4>Destaques:</h4>
+                        <ul>
+                            <li>Corpo docente com mestres e doutores</li>
+                            <li>Parcerias com empresas locais</li>
+                            <li>Laboratório de práticas gerenciais</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#" class="btn-secondary">Grade Curricular</a>
+                    <a href="#" class="btn-secondary">Corpo Docente</a>
+                    <a href="vestibular.html" class="btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+
+            <div class="course-detail" id="computacao">
+                <div class="course-header">
+                    <h3>Ciência da Computação</h3>
+                    <span class="course-badge bacharelado">Bacharelado</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-info">
+                        <p><strong>Duração:</strong> 4 anos</p>
+                        <p><strong>Turno:</strong> Integral</p>
+                        <p><strong>Vagas:</strong> 40 por semestre</p>
+                        <p><strong>Nota MEC:</strong> 5.0</p>
+                    </div>
+                    <div class="course-description">
+                        <p>O curso forma profissionais capacitados para atuar no desenvolvimento de sistemas, inteligência artificial, banco de dados e outras áreas da computação.</p>
+                        <h4>Destaques:</h4>
+                        <ul>
+                            <li>Laboratórios de última geração</li>
+                            <li>Parceria com empresas de tecnologia</li>
+                            <li>Programa de incubação de startups</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#" class="btn-secondary">Grade Curricular</a>
+                    <a href="#" class="btn-secondary">Corpo Docente</a>
+                    <a href="vestibular.html" class="btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+
+            <div class="course-detail" id="direito">
+                <div class="course-header">
+                    <h3>Direito</h3>
+                    <span class="course-badge bacharelado">Bacharelado</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-info">
+                        <p><strong>Duração:</strong> 5 anos</p>
+                        <p><strong>Turno:</strong> Matutino/Noturno</p>
+                        <p><strong>Vagas:</strong> 80 por semestre</p>
+                        <p><strong>Nota MEC:</strong> 4.7</p>
+                    </div>
+                    <div class="course-description">
+                        <p>O curso de Direito da UNIOESTE prepara profissionais éticos e competentes para atuar nas diversas áreas do Direito, com ênfase na prática jurídica.</p>
+                        <h4>Destaques:</h4>
+                        <ul>
+                            <li>Núcleo de Prática Jurídica</li>
+                            <li>Convênios com escritórios e órgãos públicos</li>
+                            <li>Biblioteca especializada</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#" class="btn-secondary">Grade Curricular</a>
+                    <a href="#" class="btn-secondary">Corpo Docente</a>
+                    <a href="vestibular.html" class="btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+
+            <div class="course-detail" id="engenharia">
+                <div class="course-header">
+                    <h3>Engenharia Civil</h3>
+                    <span class="course-badge bacharelado">Bacharelado</span>
+                </div>
+                <div class="course-content">
+                    <div class="course-info">
+                        <p><strong>Duração:</strong> 5 anos</p>
+                        <p><strong>Turno:</strong> Integral</p>
+                        <p><strong>Vagas:</strong> 50 por semestre</p>
+                        <p><strong>Nota MEC:</strong> 4.8</p>
+                    </div>
+                    <div class="course-description">
+                        <p>O curso forma engenheiros civis capacitados para projetar, construir e gerenciar obras de infraestrutura, com sólida formação técnica e humanística.</p>
+                        <h4>Destaques:</h4>
+                        <ul>
+                            <li>Laboratórios de estruturas e materiais</li>
+                            <li>Convênios com construtoras da região</li>
+                            <li>Visitas técnicas a obras</li>
+                        </

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - UNIOESTE Foz do Iguaçu</title>
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <!-- Cabeçalho igual ao index.html -->
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Fale Conosco</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Contato</span>
+            </nav>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    
+                    <div class="info-card">
+                        <h3><i class="icon">📍</i> Endereço</h3>
+                        <p>Rua Universitária, 1619 - Jardim Universitário</p>
+                        <p>Foz do Iguaçu - PR, 85819-110</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="icon">📞</i> Telefones</h3>
+                        <p><strong>Secretaria:</strong> (45) 3576-8000</p>
+                        <p><strong>Vestibular:</strong> (45) 3576-8001</p>
+                        <p><strong>Ouvidoria:</strong> 0800-123-4567</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="icon">✉️</i> E-mails</h3>
+                        <p><strong>Geral:</strong> contato@unioeste.br</p>
+                        <p><strong>Vestibular:</strong> vestibular@unioeste.br</p>
+                        <p><strong>Imprensa:</strong> imprensa@unioeste.br</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="icon">⏱️</i> Horário de Atendimento</h3>
+                        <p><strong>Secretaria:</strong> 08h-18h (segunda a sexta)</p>
+                        <p><strong>Biblioteca:</strong> 08h-22h (segunda a sexta)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Envie sua Mensagem</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione...</option>
+                                <option value="admission">Vestibular/Admissão</option>
+                                <option value="courses">Cursos</option>
+                                <option value="financial">Assuntos Financeiros</option>
+                                <option value="other">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-contact">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Como faço para agendar uma visita ao campus?</h3>
+                    <p>Entre em contato com a Secretaria de Eventos pelo telefone (45) 3576-8005 ou pelo e-mail eventos@unioeste.br.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Onde encontro informações sobre transferências?</h3>
+                    <p>As informações sobre transferência interna e externa estão disponíveis na Secretaria Acadêmica ou no site na seção Editais.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Como entrar em contato com um professor específico?</h3>
+                    <p>Você pode encontrar os contatos dos professores no site da UNIOESTE, na página do departamento correspondente.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Onde fica o setor de estágios?</h3>
+                    <p>O Núcleo de Estágios está localizado no Prédio Administrativo, sala 205, atendendo de segunda a sexta das 13h às 17h.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Rodapé igual ao index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

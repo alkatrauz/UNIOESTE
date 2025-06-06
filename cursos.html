@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - UNIOESTE Foz do Iguaçu</title>
+    <link rel="stylesheet" href="css/cursos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="unidades.html">Unidades</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="vestibular.html" class="cta-button">Inscreva-se</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Nossos Cursos</h1>
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> > <span>Cursos</span>
+            </nav>
+        </section>
+
+        <section class="courses-categories">
+            <div class="category-tabs">
+                <button class="tab-button active" data-tab="graduacao">Graduação</button>
+                <button class="tab-button" data-tab="pos-graduacao">Pós-Graduação</button>
+                <button class="tab-button" data-tab="extensao">Extensão</button>
+            </div>
+
+            <div class="tab-content active" id="graduacao">
+                <h2>Cursos de Graduação</h2>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <h3>Administração</h3>
+                        <p>Bacharelado - Matutino/Noturno</p>
+                        <a href="graduacao.html#administracao" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Ciência da Computação</h3>
+                        <p>Bacharelado - Integral</p>
+                        <a href="graduacao.html#computacao" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Direito</h3>
+                        <p>Bacharelado - Matutino/Noturno</p>
+                        <a href="graduacao.html#direito" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Engenharia Civil</h3>
+                        <p>Bacharelado - Integral</p>
+                        <a href="graduacao.html#engenharia" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Psicologia</h3>
+                        <p>Bacharelado - Integral</p>
+                        <a href="graduacao.html#psicologia" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Turismo</h3>
+                        <p>Bacharelado - Noturno</p>
+                        <a href="graduacao.html#turismo" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                </div>
+                <a href="graduacao.html" class="btn-primary">Ver Todos os Cursos de Graduação</a>
+            </div>
+
+            <div class="tab-content" id="pos-graduacao">
+                <h2>Cursos de Pós-Graduação</h2>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <h3>MBA em Gestão Empresarial</h3>
+                        <p>Lato Sensu - Noturno</p>
+                        <a href="pos-graduacao.html#mba" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Mestrado em Computação</h3>
+                        <p>Stricto Sensu - Integral</p>
+                        <a href="pos-graduacao.html#mestrado" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Especialização em Direito</h3>
+                        <p>Lato Sensu - Noturno</p>
+                        <a href="pos-graduacao.html#direito" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                </div>
+                <a href="pos-graduacao.html" class="btn-primary">Ver Todos os Cursos de Pós-Graduação</a>
+            </div>
+
+            <div class="tab-content" id="extensao">
+                <h2>Cursos de Extensão</h2>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <h3>Inglês Instrumental</h3>
+                        <p>60 horas - Noturno</p>
+                        <a href="extensao.html#ingles" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Gestão de Projetos</h3>
+                        <p>40 horas - Sábados</p>
+                        <a href="extensao.html#gestao" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="course-card">
+                        <h3>Programação Web</h3>
+                        <p>80 horas - Noturno</p>
+                        <a href="extensao.html#web" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                </div>
+                <a href="extensao.html" class="btn-primary">Ver Todos os Cursos de Extensão</a>
+            </div>
+        </section>
+
+        <section class="how-to-apply">
+            <h2>Como se Inscrever</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Escolha seu Curso</h3>
+                    <p>Selecione entre nossas opções de graduação, pós ou extensão.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Verifique o Edital</h3>
+                    <p>Confira os requisitos e datas no edital específico.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Faça sua Inscrição</h3>
+                    <p>Preencha o formulário online e pague a taxa.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Acompanhe o Processo</h3>
+                    <p>Verifique seu e-mail e nosso site para novidades.</p>
+                </div>
+            </div>
+            <a href="vestibular.html" class="btn-primary">Inscreva-se Agora</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Rodapé igual ao index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
