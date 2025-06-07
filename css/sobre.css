@@ -554,74 +554,6 @@ select:focus {
     color: var(--text-light);
 }
 
-/* Adicione ao style.css */
-
-.future-section {
-    background: linear-gradient(135deg, var(--unioeste-blue) 0%, var(--unioeste-dark) 100%);
-    color: white;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.future-section .container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.future-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.future-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.future-section .btn-primary {
-    background-color: var(--unioeste-gold);
-    color: var(--unioeste-dark);
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    border: none;
-}
-
-.future-section .btn-primary:hover {
-    background-color: #ffd700;
-    transform: scale(1.05);
-}
-
-
-/* nao funcionais */
-
-.non-functional-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    text-align: center;
-}
-
-.non-functional-message {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 600px;
-}
-
-.non-functional-message h2 {
-    color: var(--unioeste-blue);
-    margin-bottom: 20px;
-}
-
-.non-functional-message p {
-    color: var(--unioeste-dark);
-    margin-bottom: 30px;
-    font-size: 1.1rem;
-}
-
 /* Responsividade */
 @media (max-width: 992px) {
     .hero-content,
@@ -655,130 +587,121 @@ select:focus {
     }
 }
 
-/* Menu Hamburguer */
-.hamburger {
-    display: none; /* Escondido em desktop */
-    padding: 15px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    z-index: 1001;
-}
-
-.hamburger-box {
-    width: 30px;
-    height: 24px;
-    display: inline-block;
-    position: relative;
-}
-
-.hamburger-inner {
-    width: 100%;
-    height: 3px;
-    background-color: var(--unioeste-blue);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.2s ease;
-}
-
-.hamburger-inner::before,
-.hamburger-inner::after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    background-color: var(--unioeste-blue);
-    position: absolute;
-    left: 0;
-    transition: transform 0.3s ease;
-}
-
-.hamburger-inner::before {
-    top: -8px;
-}
-
-.hamburger-inner::after {
-    top: 8px;
-}
-
-/* Estado ativo (quando o menu está aberto) */
-.hamburger.active .hamburger-inner {
-    background-color: transparent;
-}
-
-.hamburger.active .hamburger-inner::before {
-    transform: translateY(8px) rotate(45deg);
-    background-color: white;
-}
-
-.hamburger.active .hamburger-inner::after {
-    transform: translateY(-8px) rotate(-45deg);
-    background-color: white;
-}
-
-/* Responsividade - Menu */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-    
-    .main-nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        max-width: 300px;
-        height: 100vh;
-        background-color: var(--unioeste-blue);
-        padding: 80px 20px 20px;
-        transition: right 0.3s ease;
-        z-index: 1000;
-    }
-    
-    .main-nav.active {
-        right: 0;
+    .header-content {
+        flex-direction: column;
+        gap: var(--space-md);
     }
     
     .main-nav ul {
         flex-direction: column;
+        gap: var(--space-sm);
     }
     
-    .main-nav li {
-        margin: 15px 0;
+    .reasons-grid {
+        grid-template-columns: 1fr;
     }
     
-    .main-nav a {
-        color: white;
-        font-size: 1.2rem;
+    .footer-content {
+        grid-template-columns: 1fr;
     }
     
-    .main-nav a:hover {
-        color: var(--unioeste-gold);
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .cta-button {
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-    }
+}
 
-    .main-nav::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.3s ease;
+@media (max-width: 576px) {
+    .buttons-group {
+        flex-direction: column;
     }
     
-    .main-nav.active::before {
-        opacity: 1;
-        pointer-events: auto;
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+    }
+    
+    .newsletter-signup form {
+        flex-direction: column;
+    }
+}
+
+/* Pós-graduação - Estilos específicos */
+.page-header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.page-header h1 {
+    color: var(--unioeste-blue);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.pos-courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.pos-course {
+    background-color: var(--unioeste-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.pos-course:hover {
+    transform: translateY(-5px);
+}
+
+.pos-course-header {
+    background-color: var(--unioeste-blue);
+    color: white;
+    padding: 20px;
+}
+
+.pos-course-body {
+    padding: 25px;
+}
+
+.pos-course h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.course-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.course-meta span {
+    background-color: var(--unioeste-gray);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.inscription-box {
+    background-color: var(--unioeste-light-blue);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.inscription-box h2 {
+    margin-top: 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .pos-courses {
+        grid-template-columns: 1fr;
     }
 }
