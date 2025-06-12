@@ -1,3 +1,4 @@
+/* Vestibular - Página de Inscrição */
 /* Variáveis de Cor e Fonte */
 :root {
     /* Cores Principais */
@@ -756,3 +757,76 @@ select:focus {
         pointer-events: auto;
     }
 }
+
+.page-header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: var(--unioeste-gray);
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    color: var(--unioeste-blue);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.inscription-process {
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ddd;
+    z-index: 1;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    color: var(--unioeste-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.step-title {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--unioeste-dark);
+}
+
+.step.active .step-number {
+    background-color: var(--unioeste-blue);
+    color: white;
+}
+
+.step.active .step-title {
+    color: var(--unioeste-blue);
+    font-weight: 

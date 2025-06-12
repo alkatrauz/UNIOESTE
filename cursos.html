@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos - UNIOESTE Foz do Iguaçu</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/cursos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,6 @@
                 <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
             </div>
         
-            <!-- Botão Hamburguer - ESSA PARTE É NOVA -->
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -45,6 +45,43 @@
             </nav>
         </section>
 
+        <section class="courses-filter">
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="area">Área:</label>
+                    <select id="area">
+                        <option value="all">Todas as Áreas</option>
+                        <option value="exatas">Ciências Exatas</option>
+                        <option value="humanas">Ciências Humanas</option>
+                        <option value="saude">Ciências da Saúde</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="shift">Turno:</label>
+                    <select id="shift">
+                        <option value="all">Todos os Turnos</option>
+                        <option value="morning">Matutino</option>
+                        <option value="afternoon">Vespertino</option>
+                        <option value="night">Noturno</option>
+                        <option value="integral">Integral</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="degree">Tipo:</label>
+                    <select id="degree">
+                        <option value="all">Todos</option>
+                        <option value="bacharelado">Bacharelado</option>
+                        <option value="licenciatura">Licenciatura</option>
+                    </select>
+                </div>
+                <button id="filterButton" class="btn-secondary">Filtrar</button>
+                <div id="filterMessage" class="filter-message" style="display:none;">
+                    <p>Esta funcionalidade não está disponível no momento</p>
+                    <button class="btn-primary" onclick="document.getElementById('filterMessage').style.display='none'">Entendi</button>
+                </div>
+            </div>
+        </section>
+
         <section class="courses-categories">
             <div class="category-tabs">
                 <button class="tab-button active" data-tab="graduacao">Graduação</button>
@@ -56,33 +93,50 @@
                 <h2>Cursos de Graduação</h2>
                 <div class="courses-grid">
                     <div class="course-card">
+                        <div class="course-badge">Bacharelado</div>
                         <h3>Administração</h3>
-                        <p>Bacharelado - Matutino/Noturno</p>
+                        <p class="course-info">Matutino/Noturno - 4 anos</p>
+                        <p class="course-description">Formação em gestão de negócios com visão estratégica e empreendedora.</p>
                         <a href="graduacao.html#administracao" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
+                        <div class="course-badge">Bacharelado</div>
                         <h3>Ciência da Computação</h3>
-                        <p>Bacharelado - Integral</p>
+                        <p class="course-info">Integral - 4 anos</p>
+                        <p class="course-description">Desenvolvimento de sistemas, inteligência artificial e tecnologias emergentes.</p>
                         <a href="graduacao.html#computacao" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
+                        <div class="course-badge">Bacharelado</div>
                         <h3>Direito</h3>
-                        <p>Bacharelado - Matutino/Noturno</p>
+                        <p class="course-info">Matutino/Noturno - 5 anos</p>
+                        <p class="course-description">Formação jurídica completa com enfoque na prática forense.</p>
                         <a href="graduacao.html#direito" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
+                        <div class="course-badge">Bacharelado</div>
                         <h3>Engenharia Civil</h3>
-                        <p>Bacharelado - Integral</p>
+                        <p class="course-info">Integral - 5 anos</p>
+                        <p class="course-description">Projeto, construção e manutenção de edifícios e infraestrutura.</p>
                         <a href="graduacao.html#engenharia" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
+                        <div class="course-badge">Bacharelado</div>
                         <h3>Psicologia</h3>
-                        <p>Bacharelado - Integral</p>
+                        <p class="course-info">Integral - 5 anos</p>
+                        <p class="course-description">Estudo do comportamento humano e processos mentais.</p>
                         <a href="graduacao.html#psicologia" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
+                        <div class="course-badge">Bacharelado</div>
                         <h3>Turismo</h3>
-                        <p>Bacharelado - Noturno</p>
+                        <p class="course-info">Noturno - 4 anos</p>
+                        <p class="course-description">Gestão de negócios e empreendimentos turísticos.</p>
                         <a href="graduacao.html#turismo" class="btn-secondary">Saiba Mais</a>
                     </div>
                 </div>
@@ -93,18 +147,26 @@
                 <h2>Cursos de Pós-Graduação</h2>
                 <div class="courses-grid">
                     <div class="course-card">
+                        <div class="course-badge">Especialização</div>
                         <h3>MBA em Gestão Empresarial</h3>
-                        <p>Lato Sensu - Noturno</p>
+                        <p class="course-info">Noturno - 18 meses</p>
+                        <p class="course-description">Desenvolvimento de habilidades gerenciais e liderança estratégica.</p>
                         <a href="pos-graduacao.html#mba" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
-                        <h3>Mestrado em Computação</h3>
-                        <p>Stricto Sensu - Integral</p>
+                        <div class="course-badge">Mestrado</div>
+                        <h3>Computação Aplicada</h3>
+                        <p class="course-info">Integral - 24 meses</p>
+                        <p class="course-description">Pesquisa em sistemas distribuídos e engenharia de software.</p>
                         <a href="pos-graduacao.html#mestrado" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
-                        <h3>Especialização em Direito</h3>
-                        <p>Lato Sensu - Noturno</p>
+                        <div class="course-badge">Especialização</div>
+                        <h3>Direito Tributário</h3>
+                        <p class="course-info">Noturno - 12 meses</p>
+                        <p class="course-description">Aprofundamento em legislação tributária e planejamento fiscal.</p>
                         <a href="pos-graduacao.html#direito" class="btn-secondary">Saiba Mais</a>
                     </div>
                 </div>
@@ -115,18 +177,26 @@
                 <h2>Cursos de Extensão</h2>
                 <div class="courses-grid">
                     <div class="course-card">
+                        <div class="course-badge">Curso Livre</div>
                         <h3>Inglês Instrumental</h3>
-                        <p>60 horas - Noturno</p>
+                        <p class="course-info">Noturno - 60 horas</p>
+                        <p class="course-description">Leitura e interpretação de textos acadêmicos em inglês.</p>
                         <a href="extensao.html#ingles" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
+                        <div class="course-badge">Workshop</div>
                         <h3>Gestão de Projetos</h3>
-                        <p>40 horas - Sábados</p>
+                        <p class="course-info">Sábados - 40 horas</p>
+                        <p class="course-description">Metodologias ágeis e ferramentas de gestão.</p>
                         <a href="extensao.html#gestao" class="btn-secondary">Saiba Mais</a>
                     </div>
+                    
                     <div class="course-card">
+                        <div class="course-badge">Curso Livre</div>
                         <h3>Programação Web</h3>
-                        <p>80 horas - Noturno</p>
+                        <p class="course-info">Noturno - 80 horas</p>
+                        <p class="course-description">Desenvolvimento front-end com HTML, CSS e JavaScript.</p>
                         <a href="extensao.html#web" class="btn-secondary">Saiba Mais</a>
                     </div>
                 </div>
@@ -174,9 +244,9 @@
                     <h4>Institucional</h4>
                     <ul>
                         <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="#">História</a></li>
-                        <li><a href="#">Missão e Valores</a></li>
-                        <li><a href="#">Estrutura Administrativa</a></li>
+                        <li><a href="funciona.html">História</a></li>
+                        <li><a href="funciona.html">Missão e Valores</a></li>
+                        <li><a href="funciona.html">Estrutura Administrativa</a></li>
                     </ul>
                 </div>
                 <div class="column">
@@ -184,17 +254,17 @@
                     <ul>
                         <li><a href="graduacao.html">Graduação</a></li>
                         <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
-                        <li><a href="extensao.html">Extensão</a></li>
-                        <li><a href="#">Cursos Técnicos</a></li>
+                        <li><a href="funciona.html">Extensão</a></li>
+                        <li><a href="funciona.html">Cursos Técnicos</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Serviços</h4>
                     <ul>
-                        <li><a href="biblioteca.html">Biblioteca</a></li>
-                        <li><a href="editais.html">Editais</a></li>
+                        <li><a href="funciona.html">Biblioteca</a></li>
+                        <li><a href="funciona.html">Editais</a></li>
                         <li><a href="vestibular.html">Vestibular</a></li>
-                        <li><a href="#">Restaurante Universitário</a></li>
+                        <li><a href="funciona.html">Restaurante Universitário</a></li>
                     </ul>
                 </div>
                 <div class="column">
@@ -202,8 +272,8 @@
                     <ul>
                         <li><a href="contato.html">Fale Conosco</a></li>
                         <li><a href="funciona.html">Ouvidoria</a></li>
-                        <li><a href="#">Trabalhe Conosco</a></li>
-                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="funciona.html">Trabalhe Conosco</a></li>
+                        <li><a href="funciona.html">Imprensa</a></li>
                     </ul>
                 </div>
             </div>
@@ -214,15 +284,14 @@
                     <button type="submit">Assinar</button>
                 </form>
                 <div class="social-icons">
-                    <a href="#"><img src="assets/icone-facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="assets/icone-instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="assets/icone-twitter.png" alt="Twitter"></a>
+                    <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png" alt="Instagram"></a>
                 </div>
             </div>
         </div>
         <div class="container copyright">
             <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
-            <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+            <p><a href="funciona.html">Política de Privacidade</a> | <a href="funciona.html">Termos de Uso</a></p>
         </div>
     </footer>
 
@@ -231,15 +300,18 @@
         // Tab functionality
         document.querySelectorAll('.tab-button').forEach(button => {
             button.addEventListener('click', () => {
-                // Remove active class from all buttons and contents
                 document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
                 
-                // Add active class to clicked button and corresponding content
                 button.classList.add('active');
                 const tabId = button.getAttribute('data-tab');
                 document.getElementById(tabId).classList.add('active');
             });
+        });
+
+        // Filter button functionality
+        document.getElementById('filterButton').addEventListener('click', function() {
+            document.getElementById('filterMessage').style.display = 'block';
         });
     </script>
 </body>
