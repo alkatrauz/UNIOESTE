@@ -130,12 +130,35 @@ ul {
     list-style: none;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--space-md);
+.page-header {
+    padding: var(--space-xxl) 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+    margin-bottom: var(--space-xxl);
+    border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
 }
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: var(--space-sm);
+    color: white;
+}
+
+.breadcrumb {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
+
 
 /* Layout */
 .main-header {
@@ -184,58 +207,6 @@ ul {
 
 .main-nav ul li a:hover::after {
     width: 100%;
-}
-
-/* Formulários */
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea,
-select {
-    width: 100%;
-    padding: var(--space-md);
-    border: 1px solid var(--medium-gray);
-    border-radius: var(--border-radius);
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    transition: all 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.2);
-}
-
-.newsletter-signup form {
-    display: flex;
-    gap: var(--space-sm);
-    margin-top: var(--space-md);
-}
-
-.newsletter-signup input[type="email"] {
-    flex: 1;
-    padding: var(--space-sm) var(--space-md);
-}
-
-.newsletter-signup button[type="submit"] {
-    background-color: var(--accent-color);
-    color: var(--dark-color);
-    border: none;
-    padding: var(--space-sm) var(--space-lg);
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.newsletter-signup button[type="submit"]:hover {
-    background-color: #FFC000;
-    transform: translateY(-2px);
 }
 
 /* Footer */

@@ -136,8 +136,50 @@ ul {
     margin: 0 auto;
     padding: 0 var(--space-md);
 }
+.page-header {
+    padding: var(--space-xxl) 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+    margin-bottom: var(--space-xxl);
+    border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: var(--space-sm);
+    color: white;
+}
+
+.breadcrumb {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: white;
+}
 
 /* Layout */
+.page-header {
+    padding: var(--space-xxl) 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+    margin-bottom: var(--space-xxl);
+    border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: var(--space-sm);
+    color: white;
+}
 .main-header {
     background-color: var(--bg-light);
     box-shadow: var(--shadow-sm);
@@ -186,33 +228,6 @@ ul {
     width: 100%;
 }
 
-/* Estilos específicos para a página de Contato */
-.page-header {
-    padding: var(--space-xxl) 0 var(--space-xl);
-    text-align: center;
-}
-
-.page-header h1 {
-    font-size: 2.8rem;
-    margin-bottom: var(--space-sm);
-    color: var(--primary-color);
-}
-
-.breadcrumb {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-bottom: var(--space-md);
-}
-
-.breadcrumb a {
-    color: var(--secondary-color);
-    transition: color 0.3s ease;
-}
-
-.breadcrumb a:hover {
-    color: var(--primary-color);
-}
-
 /* Seção de Contato */
 .contact-section {
     padding: var(--space-xl) 0;
@@ -244,6 +259,7 @@ ul {
     background-color: var(--white);
     padding: var(--space-lg);
     border-radius: var(--border-radius-lg);
+    border-left: 4px solid var(--accent-color);
     margin-bottom: var(--space-lg);
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
@@ -281,6 +297,12 @@ ul {
 }
 
 /* Formulário de Contato */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-xxl);
+}
+
 .contact-form {
     background-color: var(--white);
     padding: var(--space-xl);
@@ -396,57 +418,6 @@ ul {
     line-height: 1.6;
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
-    }
-    
-    .contact-info,
-    .contact-form {
-        padding: var(--space-lg);
-    }
-}
-
-@media (max-width: 768px) {
-    .page-header h1 {
-        font-size: 2.2rem;
-    }
-    
-    .contact-info h2,
-    .contact-form h2,
-    .faq-contact h2 {
-        font-size: 1.5rem;
-    }
-    
-    .info-card {
-        padding: var(--space-md);
-    }
-    
-    .faq-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .page-header h1 {
-        font-size: 2rem;
-    }
-    
-    .contact-info,
-    .contact-form {
-        padding: var(--space-md);
-    }
-    
-    .info-card h3 {
-        font-size: 1.1rem;
-    }
-    
-    .btn-primary {
-        padding: var(--space-md) var(--space-lg);
-    }
-}
 
 /* Botões */
 .btn-primary, .btn-secondary {
@@ -757,6 +728,59 @@ select:focus {
 .hamburger.active .hamburger-inner::after {
     transform: translateY(-8px) rotate(-45deg);
     background-color: white;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: var(--space-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-info h2,
+    .contact-form h2,
+    .faq-contact h2 {
+        font-size: 1.5rem;
+    }
+    
+    .info-card {
+        padding: var(--space-md);
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: var(--space-md);
+    }
+    
+    .info-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .btn-primary {
+        padding: var(--space-md) var(--space-lg);
+    }
 }
 
 /* Menu Mobile */

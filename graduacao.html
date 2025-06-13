@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos de Graduação - UNIOESTE Foz do Iguaçu</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/graduacao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,6 @@
                 <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
             </div>
         
-            <!-- Botão Hamburguer - ESSA PARTE É NOVA -->
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -46,7 +46,6 @@
         </section>
 
         <section class="courses-filter">
-            <h2>Nossos Cursos</h2>
             <div class="filter-options">
                 <div class="filter-group">
                     <label for="area">Área:</label>
@@ -68,15 +67,18 @@
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label for="degree">Titulação:</label>
+                    <label for="degree">Tipo:</label>
                     <select id="degree">
-                        <option value="all">Todas</option>
+                        <option value="all">Todos</option>
                         <option value="bacharelado">Bacharelado</option>
                         <option value="licenciatura">Licenciatura</option>
-                        <option value="tecnologico">Tecnológico</option>
                     </select>
                 </div>
-                <button class="btn-secondary">Filtrar</button>
+                <button id="filterButton" class="btn-secondary">Filtrar</button>
+                <div id="filterMessage" class="filter-message" style="display:none;">
+                    <p>Esta funcionalidade não está disponível no momento</p>
+                    <button class="btn-primary" onclick="document.getElementById('filterMessage').style.display='none'">Entendi</button>
+                </div>
             </div>
         </section>
 
@@ -188,6 +190,17 @@
                             <li>Convênios com construtoras da região</li>
                             <li>Visitas técnicas a obras</li>
                         </ul>
+                    </div>
+                </div>
+                <div class="course-actions">
+                    <a href="#" class="btn-secondary">Grade Curricular</a>
+                    <a href="#" class="btn-secondary">Corpo Docente</a>
+                    <a href="vestibular.html" class="btn-primary">Inscreva-se</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="main-footer">
         <div class="container footer-content">
             <div class="footer-logo">
@@ -200,9 +213,6 @@
                     <h4>Institucional</h4>
                     <ul>
                         <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="funciona.html">História</a></li>
-                        <li><a href="funciona.html">Missão e Valores</a></li>
-                        <li><a href="funciona.html">Estrutura Administrativa</a></li>
                     </ul>
                 </div>
                 <div class="column">
@@ -210,26 +220,18 @@
                     <ul>
                         <li><a href="graduacao.html">Graduação</a></li>
                         <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
-                        <li><a href="funciona.html">Extensão</a></li>
-                        <li><a href="funciona.html">Cursos Técnicos</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Serviços</h4>
                     <ul>
-                        <li><a href="funciona.html">Biblioteca</a></li>
-                        <li><a href="funciona.html">Editais</a></li>
                         <li><a href="vestibular.html">Vestibular</a></li>
-                        <li><a href="funciona.html">Restaurante Universitário</a></li>
                     </ul>
                 </div>
                 <div class="column">
                     <h4>Contato</h4>
                     <ul>
                         <li><a href="contato.html">Fale Conosco</a></li>
-                        <li><a href="funciona.html">Ouvidoria</a></li>
-                        <li><a href="funciona.html">Trabalhe Conosco</a></li>
-                        <li><a href="funciona.html">Imprensa</a></li>
                     </ul>
                 </div>
             </div>
@@ -247,10 +249,27 @@
         </div>
         <div class="container copyright">
             <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
-            <p><a href="funciona.html">Política de Privacidade</a> | <a href="funciona.html">Termos de Uso</a></p>
         </div>
     </footer>
     
-                        <script src="js/script.js"></script>
-    </body>
+    <script src="js/script.js"></script>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Filter button functionality
+        document.getElementById('filterButton').addEventListener('click', function() {
+            document.getElementById('filterMessage').style.display = 'block';
+        });
+    </script>
+</body>
 </html>
