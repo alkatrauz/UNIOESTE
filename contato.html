@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,24 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="container header-content">
             <div class="logo">
                 <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
             </div>
-        
+
             <!-- Botão Hamburguer - ESSA PARTE É NOVA -->
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-        
+
             <nav class="main-nav" id="mainNav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -51,34 +54,34 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h2>Informações de Contato</h2>
-                    
+
                     <div class="info-card">
                         <h3><i class="icon">📍</i> Endereço</h3>
                         <p>Rua Universitária, 1619 - Jardim Universitário</p>
                         <p>Foz do Iguaçu - PR, 85819-110</p>
                     </div>
-                    
+
                     <div class="info-card">
                         <h3><i class="icon">📞</i> Telefones</h3>
                         <p><strong>Secretaria:</strong> (45) 3576-8000</p>
                         <p><strong>Vestibular:</strong> (45) 3576-8001</p>
                         <p><strong>Ouvidoria:</strong> 0800-123-4567</p>
                     </div>
-                    
+
                     <div class="info-card">
                         <h3><i class="icon">✉️</i> E-mails</h3>
                         <p><strong>Geral:</strong> contato@unioeste.br</p>
                         <p><strong>Vestibular:</strong> vestibular@unioeste.br</p>
                         <p><strong>Imprensa:</strong> imprensa@unioeste.br</p>
                     </div>
-                    
+
                     <div class="info-card">
                         <h3><i class="icon">⏱️</i> Horário de Atendimento</h3>
                         <p><strong>Secretaria:</strong> 08h-18h (segunda a sexta)</p>
                         <p><strong>Biblioteca:</strong> 08h-22h (segunda a sexta)</p>
                     </div>
                 </div>
-                
+
                 <div class="contact-form">
                     <h2>Envie sua Mensagem</h2>
                     <form id="contactForm">
@@ -86,17 +89,17 @@
                             <label for="name">Nome Completo</label>
                             <input type="text" id="name" name="name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="phone">Telefone</label>
                             <input type="tel" id="phone" name="phone">
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="subject">Assunto</label>
                             <select id="subject" name="subject" required>
@@ -107,12 +110,12 @@
                                 <option value="other">Outros</option>
                             </select>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="message">Mensagem</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        
+
                         <button type="submit" class="btn-primary">Enviar Mensagem</button>
                     </form>
                 </div>
@@ -124,82 +127,89 @@
             <div class="faq-grid">
                 <div class="faq-item">
                     <h3>Como faço para agendar uma visita ao campus?</h3>
-                    <p>Entre em contato com a Secretaria de Eventos pelo telefone (45) 3576-8005 ou pelo e-mail eventos@unioeste.br.</p>
+                    <p>Entre em contato com a Secretaria de Eventos pelo telefone (45) 3576-8005 ou pelo e-mail
+                        eventos@unioeste.br.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Onde encontro informações sobre transferências?</h3>
-                    <p>As informações sobre transferência interna e externa estão disponíveis na Secretaria Acadêmica ou no site na seção Editais.</p>
+                    <p>As informações sobre transferência interna e externa estão disponíveis na Secretaria Acadêmica ou
+                        no site na seção Editais.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Como entrar em contato com um professor específico?</h3>
-                    <p>Você pode encontrar os contatos dos professores no site da UNIOESTE, na página do departamento correspondente.</p>
+                    <p>Você pode encontrar os contatos dos professores no site da UNIOESTE, na página do departamento
+                        correspondente.</p>
                 </div>
                 <div class="faq-item">
                     <h3>Onde fica o setor de estágios?</h3>
-                    <p>O Núcleo de Estágios está localizado no Prédio Administrativo, sala 205, atendendo de segunda a sexta das 13h às 17h.</p>
+                    <p>O Núcleo de Estágios está localizado no Prédio Administrativo, sala 205, atendendo de segunda a
+                        sexta das 13h às 17h.</p>
                 </div>
             </div>
         </section>
     </main>
 
-<footer class="main-footer">
-    <div class="container footer-content">
-        <div class="footer-logo">
-            <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
-            <p>Universidade Estadual do Oeste do Paraná</p>
-            <p>Campus Foz do Iguaçu</p>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
+                <p>Universidade Estadual do Oeste do Paraná</p>
+                <p>Campus Foz do Iguaçu</p>
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="graduacao.html">Graduação</a></li>
+                        <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="vestibular.html">Vestibular</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter-signup">
+                <h4>Receba Novidades</h4>
+                <form>
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Assinar</button>
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-            <div class="column">
-                <h4>Institucional</h4>
-                <ul>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Cursos</h4>
-                <ul>
-                    <li><a href="graduacao.html">Graduação</a></li>
-                    <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Serviços</h4>
-                <ul>
-                    <li><a href="vestibular.html">Vestibular</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Contato</h4>
-                <ul>
-                    <li><a href="contato.html">Fale Conosco</a></li>
-                </ul>
-            </div>
+        <div class="container copyright">
+            <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
         </div>
-        <div class="newsletter-signup">
-            <h4>Receba Novidades</h4>
-            <form>
-                <input type="email" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Assinar</button>
-            </form>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png" alt="Instagram"></a>
-            </div>
-        </div>
-    </div>
-    <div class="container copyright">
-        <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
-    </div>
-</footer>
+    </footer>
 
     <script src="/js/script.js"></script>
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
             this.reset();
         });
     </script>
 </body>
+
 </html>

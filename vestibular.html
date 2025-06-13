@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vestibular - UNIOESTE Foz do Iguaçu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/vestibular.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="container header-content">
             <div class="logo">
                 <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
             </div>
-        
+
             <!-- Botão Hamburguer - ESSA PARTE É NOVA -->
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-        
+
             <nav class="main-nav" id="mainNav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -70,7 +73,7 @@
 
             <form class="inscription-form">
                 <h2>Dados Pessoais</h2>
-                
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Nome Completo</label>
@@ -111,7 +114,7 @@
                 </div>
 
                 <h2>Endereço</h2>
-                
+
                 <div class="form-group">
                     <label for="cep">CEP</label>
                     <input type="text" id="cep" name="cep" required>
@@ -156,12 +159,13 @@
 
                 <div class="form-actions">
                     <a href="funciona.html" type="submit" class="btn-primary">Próxima Etapa</button>
-                    <a href="funciona.html"></a>
-                    <div id="filterMessage" class="filter-message" style="display:none;">
-                    <p>Esta funcionalidade não está disponível no momento</p>
-                    <button class="btn-primary" onclick="document.getElementById('filterMessage').style.display='none'">Entendi</button>
-                
-                </div>
+                        <a href="funciona.html"></a>
+                        <div id="filterMessage" class="filter-message" style="display:none;">
+                            <p>Esta funcionalidade não está disponível no momento</p>
+                            <button class="btn-primary"
+                                onclick="document.getElementById('filterMessage').style.display='none'">Entendi</button>
+
+                        </div>
             </form>
         </section>
 
@@ -188,66 +192,68 @@
         </section>
     </main>
 
-<footer class="main-footer">
-    <div class="container footer-content">
-        <div class="footer-logo">
-            <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
-            <p>Universidade Estadual do Oeste do Paraná</p>
-            <p>Campus Foz do Iguaçu</p>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
+                <p>Universidade Estadual do Oeste do Paraná</p>
+                <p>Campus Foz do Iguaçu</p>
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="graduacao.html">Graduação</a></li>
+                        <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="vestibular.html">Vestibular</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter-signup">
+                <h4>Receba Novidades</h4>
+                <form>
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Assinar</button>
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-            <div class="column">
-                <h4>Institucional</h4>
-                <ul>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Cursos</h4>
-                <ul>
-                    <li><a href="graduacao.html">Graduação</a></li>
-                    <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Serviços</h4>
-                <ul>
-                    <li><a href="vestibular.html">Vestibular</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Contato</h4>
-                <ul>
-                    <li><a href="contato.html">Fale Conosco</a></li>
-                </ul>
-            </div>
+        <div class="container copyright">
+            <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
         </div>
-        <div class="newsletter-signup">
-            <h4>Receba Novidades</h4>
-            <form>
-                <input type="email" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Assinar</button>
-            </form>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png" alt="Instagram"></a>
-            </div>
-        </div>
-    </div>
-    <div class="container copyright">
-        <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
-    </div>
-</footer>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="js/non-functional.js"></script>
-        <script>
+    <script>
         // Tab functionality
         document.querySelectorAll('.tab-button').forEach(button => {
             button.addEventListener('click', () => {
                 document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-                
+
                 button.classList.add('active');
                 const tabId = button.getAttribute('data-tab');
                 document.getElementById(tabId).classList.add('active');
@@ -255,9 +261,10 @@
         });
 
         // Filter button functionality
-        document.getElementById('filterButton').addEventListener('click', function() {
+        document.getElementById('filterButton').addEventListener('click', function () {
             document.getElementById('filterMessage').style.display = 'block';
         });
     </script>
 </body>
+
 </html>

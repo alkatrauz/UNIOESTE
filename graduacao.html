@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,23 @@
     <link rel="stylesheet" href="css/graduacao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header class="main-header">
         <div class="container header-content">
             <div class="logo">
                 <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
             </div>
-        
+
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-        
+
             <nav class="main-nav" id="mainNav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -77,7 +80,8 @@
                 <button id="filterButton" class="btn-secondary">Filtrar</button>
                 <div id="filterMessage" class="filter-message" style="display:none;">
                     <p>Esta funcionalidade não está disponível no momento</p>
-                    <button class="btn-primary" onclick="document.getElementById('filterMessage').style.display='none'">Entendi</button>
+                    <button class="btn-primary"
+                        onclick="document.getElementById('filterMessage').style.display='none'">Entendi</button>
                 </div>
             </div>
         </section>
@@ -96,7 +100,8 @@
                         <p><strong>Nota MEC:</strong> 4.5</p>
                     </div>
                     <div class="course-description">
-                        <p>O curso de Administração da UNIOESTE forma profissionais capazes de gerenciar organizações públicas e privadas, com visão estratégica e capacidade de liderança.</p>
+                        <p>O curso de Administração da UNIOESTE forma profissionais capazes de gerenciar organizações
+                            públicas e privadas, com visão estratégica e capacidade de liderança.</p>
                         <h4>Destaques:</h4>
                         <ul>
                             <li>Corpo docente com mestres e doutores</li>
@@ -125,7 +130,8 @@
                         <p><strong>Nota MEC:</strong> 5.0</p>
                     </div>
                     <div class="course-description">
-                        <p>O curso forma profissionais capacitados para atuar no desenvolvimento de sistemas, inteligência artificial, banco de dados e outras áreas da computação.</p>
+                        <p>O curso forma profissionais capacitados para atuar no desenvolvimento de sistemas,
+                            inteligência artificial, banco de dados e outras áreas da computação.</p>
                         <h4>Destaques:</h4>
                         <ul>
                             <li>Laboratórios de última geração</li>
@@ -154,7 +160,8 @@
                         <p><strong>Nota MEC:</strong> 4.7</p>
                     </div>
                     <div class="course-description">
-                        <p>O curso de Direito da UNIOESTE prepara profissionais éticos e competentes para atuar nas diversas áreas do Direito, com ênfase na prática jurídica.</p>
+                        <p>O curso de Direito da UNIOESTE prepara profissionais éticos e competentes para atuar nas
+                            diversas áreas do Direito, com ênfase na prática jurídica.</p>
                         <h4>Destaques:</h4>
                         <ul>
                             <li>Núcleo de Prática Jurídica</li>
@@ -183,7 +190,8 @@
                         <p><strong>Nota MEC:</strong> 4.8</p>
                     </div>
                     <div class="course-description">
-                        <p>O curso forma engenheiros civis capacitados para projetar, construir e gerenciar obras de infraestrutura, com sólida formação técnica e humanística.</p>
+                        <p>O curso forma engenheiros civis capacitados para projetar, construir e gerenciar obras de
+                            infraestrutura, com sólida formação técnica e humanística.</p>
                         <h4>Destaques:</h4>
                         <ul>
                             <li>Laboratórios de estruturas e materiais</li>
@@ -242,8 +250,10 @@
                     <button type="submit">Assinar</button>
                 </form>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png"
+                            alt="Instagram"></a>
                 </div>
             </div>
         </div>
@@ -251,7 +261,7 @@
             <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
         </div>
     </footer>
-    
+
     <script src="js/script.js"></script>
     <script>
         // Tab functionality
@@ -259,7 +269,7 @@
             button.addEventListener('click', () => {
                 document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-                
+
                 button.classList.add('active');
                 const tabId = button.getAttribute('data-tab');
                 document.getElementById(tabId).classList.add('active');
@@ -267,9 +277,10 @@
         });
 
         // Filter button functionality
-        document.getElementById('filterButton').addEventListener('click', function() {
+        document.getElementById('filterButton').addEventListener('click', function () {
             document.getElementById('filterMessage').style.display = 'block';
         });
     </script>
 </body>
+
 </html>

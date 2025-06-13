@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,38 @@
     <link rel="stylesheet" href="css/unidades.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header class="main-header">
-    <div class="container header-content">
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="nav-overlay" id="navOverlay"></div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="unidades.html">Unidades</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li>
+                        <a href="vestibular.html" class="cta-button">Inscreva-se</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        
-        <div class="nav-overlay" id="navOverlay"></div>
-        
-        <nav class="main-nav" id="mainNav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="unidades.html">Unidades</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li>
-                    <a href="vestibular.html" class="cta-button">Inscreva-se</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    </header>
 
     <main class="container">
         <section class="page-header">
@@ -128,62 +131,67 @@
                 </div>
             </div>
             <div class="map-embed">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.102057944105!2d-54.5887889243356!3d-25.51650663333065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690eb1a1e0e0d%3A0x5a2a7e6a1a0f0f0f!2sUNIOESTE%20-%20Universidade%20Estadual%20do%20Oeste%20do%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.102057944105!2d-54.5887889243356!3d-25.51650663333065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690eb1a1e0e0d%3A0x5a2a7e6a1a0f0f0f!2sUNIOESTE%20-%20Universidade%20Estadual%20do%20Oeste%20do%20Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>
 
-<footer class="main-footer">
-    <div class="container footer-content">
-        <div class="footer-logo">
-            <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
-            <p>Universidade Estadual do Oeste do Paraná</p>
-            <p>Campus Foz do Iguaçu</p>
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
+                <p>Universidade Estadual do Oeste do Paraná</p>
+                <p>Campus Foz do Iguaçu</p>
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Cursos</h4>
+                    <ul>
+                        <li><a href="graduacao.html">Graduação</a></li>
+                        <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="vestibular.html">Vestibular</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="contato.html">Fale Conosco</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter-signup">
+                <h4>Receba Novidades</h4>
+                <form>
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit">Assinar</button>
+                </form>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png"
+                            alt="Instagram"></a>
+                </div>
+            </div>
         </div>
-        <div class="footer-links">
-            <div class="column">
-                <h4>Institucional</h4>
-                <ul>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Cursos</h4>
-                <ul>
-                    <li><a href="graduacao.html">Graduação</a></li>
-                    <li><a href="pos-graduacao.html">Pós-Graduação</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Serviços</h4>
-                <ul>
-                    <li><a href="vestibular.html">Vestibular</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4>Contato</h4>
-                <ul>
-                    <li><a href="contato.html">Fale Conosco</a></li>
-                </ul>
-            </div>
+        <div class="container copyright">
+            <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
         </div>
-        <div class="newsletter-signup">
-            <h4>Receba Novidades</h4>
-            <form>
-                <input type="email" placeholder="Seu melhor e-mail" required>
-                <button type="submit">Assinar</button>
-            </form>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/unioestecamfoz/"><img src="assets/icone-facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/unioestecampfoz/"><img src="assets/icone-instagram.png" alt="Instagram"></a>
-            </div>
-        </div>
-    </div>
-    <div class="container copyright">
-        <p>&copy; 2025 UNIOESTE - Todos os direitos reservados</p>
-    </div>
-</footer>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
