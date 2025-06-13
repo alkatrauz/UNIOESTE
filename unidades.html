@@ -11,32 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container header-content">
-            <div class="logo">
-                <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
-            </div>
-        
-            <!-- Botão Hamburguer - ESSA PARTE É NOVA -->
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        
-            <nav class="main-nav" id="mainNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="unidades.html">Unidades</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li>
-                        <a href="vestibular.html" class="cta-button">Inscreva-se</a>
-                    </li>
-                </ul>
-            </nav>
+<header class="main-header">
+    <div class="container header-content">
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo-unioeste-png-rgb.webp" alt="Logo Unioeste"></a>
         </div>
-    </header>
+        
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        
+        <div class="nav-overlay" id="navOverlay"></div>
+        
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a href="vestibular.html" class="cta-button">Inscreva-se</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <main class="container">
         <section class="page-header">
